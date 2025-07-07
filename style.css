@@ -1,0 +1,84 @@
+#office{
+    z-index:-1; 
+    width:1040px; 
+  /*  height: 1200px; */
+    position: absolute;
+  }
+  
+  #bossCont{
+    z-index:1; 
+    position: absolute;
+    top: -129px;
+    left:150px;   
+    width:900px; 
+  }
+
+  #d1{
+    background-color:rgb(217, 237, 255);  /*217, 237, 255*/ /*148, 203, 255*/ 
+    width:500px; 
+    height:150px; 
+    position:absolute; 
+    z-index:3;
+    bottom: 100px;
+    left: 270px;
+    border: 5px solid pink; 
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:rgb(150, 165, 253);
+    text-align:center; 
+    padding-top: 10px; /* Move this down */ 
+    font-size: 15px; 
+  }
+
+  #back_button{
+    background-color:rgb(217, 237, 255);  
+    border: 3px solid pink; 
+    border-radius: 5px;
+    width:200px;
+    height:60px; 
+    position:absolute; 
+    z-index:3;
+    bottom: 100px;
+    left: 270px; 
+  }
+
+  #front_button{
+    background-color:rgb(217, 237, 255);  
+    border: 3px solid pink; 
+    border-radius: 5px;
+    width:200px;
+    height:60px;
+    position:absolute; 
+    z-index:3;
+    bottom: 100px;
+    left: 580px; 
+  }
+
+  #pause_button{
+    background-color:rgb(217, 237, 255);  
+    border: 3px solid pink; 
+    border-radius: 5px;
+    width:120px;
+    height:60px;
+    position:absolute; 
+    z-index:3;
+    bottom: 100px;
+    left: 465px; 
+  }
+
+  #back_button:hover{
+    background-color:rgb(255, 232, 236);
+    cursor: pointer;
+  }
+
+  #front_button:hover{
+    background-color: rgb(255, 232, 236);
+    cursor: pointer;
+  }
+
+  #pause_button:hover{
+    background-color: rgb(255, 232, 236);
+    cursor: pointer;
+  }
+  
