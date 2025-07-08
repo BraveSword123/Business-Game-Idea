@@ -1,3 +1,15 @@
+body{
+  background-image: url('office.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-position-y: center; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+}
+
 #office{
     z-index:-1; 
     width:1040px; 
@@ -7,20 +19,20 @@
   
   #bossCont{
     z-index:1; 
-    position: absolute;
-    top: -129px;
-    left:150px;   
-    width:900px; 
+   position: absolute;
+    top: -200px; /* -129px */ 
+    left:250px;   
+    width:1100px; /*1200 */ 
   }
 
   #d1{
     background-color:rgb(217, 237, 255);  /*217, 237, 255*/ /*148, 203, 255*/ 
-    width:500px; 
-    height:150px; 
+    width:550px; /*500 */ 
+    height:200px; /* 150 */ 
     position:absolute; 
     z-index:3;
-    bottom: 100px;
-    left: 270px;
+    bottom: 45px; /*100*/ 
+    left: 430px; /*270*/ 
     border: 5px solid pink; 
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
@@ -39,8 +51,8 @@
     height:60px; 
     position:absolute; 
     z-index:3;
-    bottom: 100px;
-    left: 270px; 
+    bottom: 45px; /*100*/ 
+    left: 430px; /*270*/ 
   }
 
   #front_button{
@@ -51,20 +63,20 @@
     height:60px;
     position:absolute; 
     z-index:3;
-    bottom: 100px;
-    left: 580px; 
+    bottom: 45px;
+    left: 789px; 
   }
 
   #pause_button{
     background-color:rgb(217, 237, 255);  
     border: 3px solid pink; 
     border-radius: 5px;
-    width:120px;
+    width:175px;
     height:60px;
     position:absolute; 
     z-index:3;
-    bottom: 100px;
-    left: 465px; 
+    bottom: 45px;
+    left: 620px; 
   }
 
   #back_button:hover{
