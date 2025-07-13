@@ -12,10 +12,26 @@ function line6() {
 function inputName(){
   firstName = document.getElementById("nameText").value;
   console.log(firstName);
+  if(firstName == ""){
+   /* const nameError = document.createElement("div"); 
+    nameError.innerHTML = "Please Enter your First Name!";
+    nameError.id = "nameError";
+    document.body.appendChild(nameError); 
+    var button = document.createElement("button");
+    button.innerHTML = "OK";
+    button.id = "okButton";
+    document.body.appendChild(button); */
+    document.getElementById("errorDiv").style.display = 'block';
+    document.getElementById("d1").innerHTML = line2;
+    document.getElementById("bossCont").src = "two.png";
+  }
+else{
   document.getElementById("d1").innerHTML = line3;
   document.getElementById("bossCont").src = "fun.png";
   document.getElementById("nameText").style.display = 'none';
   document.getElementById("enterName").style.display = 'none';
+  document.getElementById("errorDiv").style.display = 'none';
+}
 }
 
 function text1(){
@@ -97,6 +113,10 @@ function text0(){
         document.getElementById("nameText").style.display = 'none';
         document.getElementById("enterName").style.display = 'none';
       }
+}
+
+function errorOK(){
+  document.getElementById("errorDiv").style.display = 'none';
 }
 
 /* function inputName(){

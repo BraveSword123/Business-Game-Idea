@@ -25,26 +25,35 @@ body{
     width:1100px; /*1200 */ 
   }
 
+  /*#nav-bar{
+    border: 5px solid rgb(255, 145, 164); 
+    width:550px; 
+    height:200px;
+    z-index: 10; 
+    position: absolute; 
+    bottom: 45px; 
+    left: 430px;  
+  } */ 
   #d1{
-    background-color:rgb(217, 237, 255);  /*217, 237, 255*/ /*148, 203, 255*/ 
+    background-color:white;  /*(217, 237, 255)*/  /*rgb(255, 217, 224)*/ /*rgb(254, 222, 228)*/ 
     width:550px; /*500 */ 
     height:200px; /* 150 */ 
     position:absolute; 
     z-index:3;
     bottom: 45px; /*100*/ 
     left: 430px; /*270*/ 
-    border: 5px solid pink; 
-    border-radius: 5px;
+    border: 5px solid rgb(255, 145, 164); 
+  /*  border-radius: 5px; */ 
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color:rgb(150, 165, 253);
+    color:pink; /*rgb(150, 165, 253)*/ 
     text-align:center; 
     padding-top: 10px; /* Move this down */ 
-    font-size: 15px; 
+    font-size: 20px; /*15px*/ 
   }
 
   #back_button{
-    background-color:rgb(217, 237, 255);  
+    background-color:white;  /*rgb(217, 237, 255)*/ /*rgb(254, 222, 228)*/ 
     border: 3px solid pink; 
     border-radius: 5px;
     width:200px;
@@ -53,10 +62,15 @@ body{
     z-index:3;
     bottom: 45px; /*100*/ 
     left: 430px; /*270*/ 
+    border-left:5px solid rgb(255, 145, 164); 
+    border-bottom:5px solid rgb(255, 145, 164); 
+    color: pink; 
+    font-size:25px; 
+    font-weight:bold; 
   }
 
   #front_button{
-    background-color:rgb(217, 237, 255);  
+    background-color:white;  /*rgb(217, 237, 255)*/ /*rgb(254, 222, 228)*/ 
     border: 3px solid pink; 
     border-radius: 5px;
     width:200px;
@@ -65,10 +79,15 @@ body{
     z-index:3;
     bottom: 45px;
     left: 789px; 
+    border-bottom:5px solid rgb(255, 145, 164); 
+    border-right:5px solid rgb(255, 145, 164); 
+    color: pink; 
+    font-size:25px; 
+    font-weight:bold; 
   }
 
   #pause_button{
-    background-color:rgb(217, 237, 255);  
+    background-color:white;  /*rgb(217, 237, 255*/ /*rgb(254, 222, 228)*/ 
     border: 3px solid pink; 
     border-radius: 5px;
     width:175px;
@@ -77,6 +96,10 @@ body{
     z-index:3;
     bottom: 45px;
     left: 620px; 
+    border-bottom:5px solid rgb(255, 145, 164); 
+    color: pink; 
+    font-size:25px; 
+    font-weight:bold; 
   }
 
   #back_button:hover{
@@ -93,6 +116,24 @@ body{
     background-color: rgb(255, 232, 236);
     cursor: pointer;
   }
+
+  #back_button:active{
+    background-color:rgb(254, 222, 228);
+    cursor: pointer;
+    color:white; 
+  }
+
+  #front_button:active{
+    background-color:rgb(254, 222, 228);
+    cursor: pointer;
+    color:white; ; 
+  }
+
+  #pause_button:active{
+    background-color:rgb(254, 222, 228);
+    cursor: pointer;
+    color:white; ;
+  }
   
   #nameText{
     border: 5px solid pink; 
@@ -101,7 +142,7 @@ body{
     height:30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color:pink; /*rgb(150, 165, 253)*/ 
+    color:rgb(255, 145, 164); /*rgb(150, 165, 253)*/ 
     text-align:center; 
     font-size:19px; /*25px*/ 
     position: absolute; 
@@ -116,14 +157,14 @@ body{
     bottom: 120px;
     left: 650px; 
     z-index:3; 
-    background-color:rgb(217, 237, 255);  
+    background-color: rgb(255, 217, 224);
     border: 4px solid pink; 
     border-radius: 2px;
     width:100px;
     height:40px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color:rgb(150, 165, 253);
+    color:white;
     font-size: 16px; /*15px*/ 
     display: none; 
   }
@@ -139,6 +180,57 @@ body{
     color:white; 
   }
 
+  #okButton{
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace; 
+    height: 40px; 
+    position: absolute; 
+    top:90px; 
+    left:130px; 
+    width:50px; 
+    border:3px solid pink; 
+    font-weight:bold; 
+  }
+
+  #okButton:hover{
+    background-color: rgb(255, 232, 236);
+    cursor: pointer;
+    color:white; 
+  }
+
+  #okButton:active{
+    background-color: white;
+    cursor: pointer;
+    color:pink; 
+  }
+
+  #nameError{
+    background-color: white;
+    color:rgb(255, 217, 224); 
+    width:300px; 
+    height:150px; 
+    text-align:center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px; 
+    font-weight: bold;
+  /*  padding: 70px 0; */ 
+    top:20px; 
+    border: 5px solid pink; 
+  }
+
+  #errorDiv{
+    position: absolute; 
+    top:300px; 
+    left:550px; 
+    z-index:3; 
+    display: none; 
+  }
+
+  #errorText{
+    position: absolute; 
+    top:30px;  
+    left:60px; 
+  } 
 
 
   /*Need to add JS to pause 
