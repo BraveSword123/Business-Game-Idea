@@ -1,4 +1,4 @@
-# Business Visual Novel (Work in Progress)
+# Business Visual Novel 
 
 ## 📖 Overview
 
